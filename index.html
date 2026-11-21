@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scenari | Space Economy</title>
+<meta name="description" content="Quanto vale lo spazio per l'Italia, e come finanziarne la crescita. Dati di impatto, mappa della filiera e fondi pubblici, in un unico luogo aggiornato e citabile.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="loghi/oe-monogramma-bianco.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="3d/terra-luci.jpg">
+<link rel="stylesheet" href="ds-kit/colors_and_type.css">
+<link rel="stylesheet" href="ds-kit/components.css">
+<link rel="stylesheet" href="css/tema-spazio.css">
+<link rel="stylesheet" href="css/immersivo.css">
+</head>
+<body class="theme-space">
+<a class="skip" href="#principale">Vai al contenuto</a>
+
+<!-- ============ TESTATA ============ -->
+<header class="testata" id="testata">
+  <div class="wrap">
+    <a class="lockup" href="https://www.openeconomics.eu" aria-label="OpenEconomics, vai al sito">
+      <img src="loghi/oe-monogramma-bianco.svg" alt="OpenEconomics">
+    </a>
+    <a class="lockup-testo" href="#home" aria-label="Scenari | Space Economy, torna in cima"><span>Scenari</span><span class="sep">|</span><span>Space Economy</span></a>
+    <nav class="menu" aria-label="Sezioni del sito">
+      <a href="#settore">Il settore</a>
+      <a href="#valore">Il valore</a>
+      <a href="#fondi">I fondi</a>
+      <a href="#scadenze">Scadenze</a>
+    </nav>
+    <div class="azioni">
+      <button class="oe-btn oe-btn--sm oe-btn--secondary btn-sec" type="button" data-presenta>Presenta</button>
+      <a class="oe-btn oe-btn--sm oe-btn--accent" href="#guida">Scarica la guida</a>
+    </div>
+  </div>
+</header>
+
+<!-- Indice laterale delle sezioni -->
+<nav class="indice" aria-label="Avanzamento" id="indice"></nav>
+
+<main id="principale">
+
+<!-- ============ 0 · HERO: dallo spazio all'Italia ============ -->
+<section class="hero snap" id="home" data-label="Home">
+  <div class="hero-palco">
+    <div class="hero-strati" aria-hidden="true">
+      <img class="strato s2" src="img/30_terra-europa.webp" alt="">
+      <canvas class="strato terra3d" id="terra3d"></canvas>
+      <img class="strato s3" src="img/01_italia-orbita.webp" alt="">
+      <div class="hero-velo"></div>
+    </div>
+    <div class="wrap hero-wrap">
+      <div class="hero-testo">
+        <span class="oe-tag-chip oe-tag-chip--lime entra">Stati Generali della Space Economy · Milano · 30.11.2026</span>
+        <h1 class="righe">Lo spazio è un'infrastruttura strategica per l'economia e la sovranità del Paese.</h1>
+        <p class="lead entra">Quanto vale lo spazio per l'Italia, e come finanziarne la crescita. Dati di impatto, mappa della filiera e fondi pubblici, in un unico luogo aggiornato e citabile.</p>
+        <div class="cta-riga entra">
+          <a class="oe-btn oe-btn--lg oe-btn--accent" href="#valore">Misura il tuo impatto
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a class="oe-btn oe-btn--lg oe-btn--secondary btn-sec" href="#fondi">Mappa i tuoi fondi
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="scorri" aria-hidden="true"><span>Scorri</span><i></i></div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="sez chiara snap" id="video" data-label="Il video">
+  <div class="wrap">
+    <div class="testa-sez">
+      <span class="oe-tag-chip oe-tag-chip--lime">Il video</span>
+      <h2 class="righe">Lo spazio italiano, in pochi minuti</h2>
+      <p class="lead">Dal settore al valore ai fondi: il racconto che apre gli Stati Generali, con le stesse grafiche e gli stessi dati di questo sito.</p>
+    </div>
+  </div>
+  <div class="video-pista">
+    <div class="video-palco">
+      <div class="video" role="img" aria-label="Segnaposto del video di apertura">
+        <video class="video-sfondo" src="video/orizzonte.mp4" poster="img/03_orizzonte-airglow.webp" muted loop playsinline preload="metadata" aria-hidden="true"></video>
+        <div class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OSSERVAZIONE: mosaico che si apre ============ -->
+<div class="mosaico-pista" aria-hidden="true">
+  <div class="mosaico-palco">
+    <div class="mosaico">
+      <figure class="tessera"><img src="img/31_eo-ghiacciaio.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/15_meteo.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/35_eo-campi.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/32_eo-costa.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera centro"><img src="img/34_eo-delta.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/33_eo-dune.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/18_alluvione.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/36_eo-vulcano.webp" alt="" loading="lazy"></figure>
+      <figure class="tessera"><img src="img/17_agricoltura.webp" alt="" loading="lazy"></figure>
+    </div>
+  </div>
+</div>
+
+<!-- ============ KPI ============ -->
+<section class="sez snap" id="numeri" data-label="In cifre">
+  <canvas class="stelle" aria-hidden="true"></canvas>
+  <div class="wrap numeri">
+    <div class="testa-sez fissa">
+      <span class="oe-tag-chip oe-tag-chip--lime">In cifre</span>
+      <h2 class="righe">Lo spazio italiano in sei numeri</h2>
+      <p class="lead">Le stime di impatto sono di OpenEconomics e si distinguono sempre dai dati di terzi.</p>
+      <div class="satellite3d" aria-hidden="true"><canvas id="satellite3d"></canvas></div>
+    </div>
+    <div class="griglia g2 kpi-griglia">
+      <div class="kpi flip" tabindex="0">
+        <div class="fronte"><span class="l">PIL attivato</span><div class="v"><span class="cifra">N</span><small>mld €</small></div><span class="etich stima">Stima OE</span><span class="n">Diretto, indiretto, indotto</span></div>
+        <div class="retro"><b>Come si legge</b><span>Spiegazione del dato: metodo, perimetro e fonte.</span></div>
+      </div>
+      <div class="kpi flip" tabindex="0">
+        <div class="fronte"><span class="l">Occupati attivati</span><div class="v"><span class="cifra">N</span><small>ETP</small></div><span class="etich stima">Stima OE</span><span class="n">Con disaggregazione regionale</span></div>
+        <div class="retro"><b>Come si legge</b><span>Spiegazione del dato: metodo, perimetro e fonte.</span></div>
+      </div>
+      <div class="kpi flip" tabindex="0">
+        <div class="fronte"><span class="l">Gettito fiscale</span><div class="v"><span class="cifra">N</span><small>mld €</small></div><span class="etich stima">Stima OE</span><span class="n">Per lo Stato, effetto complessivo</span></div>
+        <div class="retro"><b>Come si legge</b><span>Spiegazione del dato: metodo, perimetro e fonte.</span></div>
+      </div>
+      <div class="kpi">
+        <div class="fronte"><span class="l">Ricavi della filiera</span><div class="v"><span class="cifra">N</span><small>mld €</small></div><span class="etich">Fonte terzi</span><span class="n">[Fonte], [anno]</span></div>
+      </div>
+      <div class="kpi">
+        <div class="fronte"><span class="l">Imprese censite</span><div class="v"><span class="cifra">N</span></div><span class="etich">Fonte terzi</span><span class="n">Catalogo ASI</span></div>
+      </div>
+      <div class="kpi">
+        <div class="fronte"><span class="l">Risorse pubbliche 2026–2028</span><div class="v"><span class="cifra">N</span><small>mld €</small></div><span class="etich">Fonte terzi</span><span class="n">UE, nazionali e regionali</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ I TRE INGRESSI: tre scene a tutto schermo ============ -->
+<section class="sez snap ingressi-sez" id="ingressi" data-label="Da dove partire">
+  <div class="wrap ingressi-testa">
+    <div class="testa-sez">
+      <span class="oe-tag-chip oe-tag-chip--lime">Tre ingressi</span>
+      <h2 class="righe">Da dove vuoi partire?</h2>
+    </div>
+  </div>
+  <div class="ingressi-pista">
+    <span class="ancora" id="settore" style="top:0svh"></span><span class="ancora" id="valore" style="top:100svh"></span><span class="ancora" id="fondi" style="top:200svh"></span>
+    <div class="ingressi-palco">
+      <div class="scene" aria-hidden="true">
+        <div class="scena" data-i="0"><video class="video-sfondo" src="video/linea-produttiva.mp4" poster="img/26_linea-produttiva.webp" muted loop playsinline preload="metadata"></video></div><div class="scena" data-i="1"><video class="video-sfondo" src="video/goccia.mp4" poster="img/21_goccia.webp" muted loop playsinline preload="metadata"></video></div><div class="scena" data-i="2"><video class="video-sfondo" src="video/laboratorio.mp4" poster="img/24_laboratorio-ottico.webp" muted loop playsinline preload="metadata"></video></div>
+        <div class="scene-velo"></div>
+      </div>
+      <nav class="tacche" aria-label="I tre ingressi"><a href="#settore" class="tacca" data-i="0"><span>Il settore</span><i><b></b></i></a><a href="#valore" class="tacca" data-i="1"><span>Il valore</span><i><b></b></i></a><a href="#fondi" class="tacca" data-i="2"><span>I fondi</span><i><b></b></i></a></nav>
+      <div class="wrap pannelli">
+        <div class="porta-pannello" data-i="0">
+          <div class="porta-top"><span class="oe-tag-chip oe-tag-chip--lime">Il settore</span><span class="conta">01 / 03</span></div>
+          <h3>La filiera italiana</h3>
+          <p>Imprese per segmento, dimensione e regione. Distretti, cluster e specializzazioni: osservazione della Terra, telecomunicazioni, navigazione, lanciatori, infrastrutture orbitali.</p>
+          <div class="viz"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg><span>Mappa dell'Italia filtrabile<br>regione · segmento · dimensione</span></div>
+          <a class="link-freccia" href="#settore">Esplora la filiera <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+        <div class="porta-pannello" data-i="1">
+          <div class="porta-top"><span class="oe-tag-chip oe-tag-chip--lime">Il valore</span><span class="conta">02 / 03</span></div>
+          <h3>Impatti e contributo strategico</h3>
+          <p>PIL, occupazione, redditi e gettito, con i moltiplicatori. I benefici da applicazione, come sicurezza e clima, restano separati dagli impatti di spesa.</p>
+          <div class="viz"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg><span>Grafico a cascata per canale<br>sankey di filiera · schede d'uso</span></div>
+          <a class="link-freccia" href="#valore">Scopri quanto vale <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+        <div class="porta-pannello" data-i="2">
+          <div class="porta-top"><span class="oe-tag-chip oe-tag-chip--lime">I fondi</span><span class="conta">03 / 03</span></div>
+          <h3>Funding finder, ciclo di vita, scadenzario</h3>
+          <p>Gli strumenti UE, ESA, nazionali e regionali con perimetro spaziale, dalla ricerca all'espansione produttiva, con stato e scadenza calcolati dalla data.</p>
+          <div class="viz"><svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg><span>Filtri: fase × livello × lato<br>dimensione · regione · stato</span></div>
+          <a class="link-freccia" href="#fondi">Mappa i tuoi fondi <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERCHÉ ADESSO ============ -->
+<section class="sez snap perche-sez" id="perche" data-label="Perché adesso">
+  <div class="perche-palco">
+    <figure class="perche-foto" aria-hidden="true"><video class="video-sfondo" src="video/controluce.mp4" poster="img/28_terra-controluce.webp" muted loop playsinline preload="metadata"></video></figure>
+    <div class="wrap">
+      <div class="perche-testo">
+        <span class="oe-tag-chip oe-tag-chip--lime">Perché adesso</span>
+        <h2 class="righe">Chi arriva con i propri numeri negozia meglio.</h2>
+        <p class="lead parole">Tra il 2025 e il 2028 si decidono le risorse del prossimo ciclo: €3,5 mld di sottoscrizioni italiane all'ESA, la Ministeriale intermedia a Roma il 15 dicembre 2026, il bilancio UE 2028–2034 con una finestra «difesa e spazio» circa cinque volte quella attuale.</p>
+        <a class="link-freccia" href="#valore">Misura il tuo impatto <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCADENZE: scorrimento orizzontale ============ -->
+<section class="sez chiara snap scad-sez" id="scadenze" data-label="Scadenze">
+  <div class="scad-palco">
+    <div class="wrap scad-wrap">
+      <div class="testa-sez">
+        <span class="oe-tag-chip oe-tag-chip--lime">Prossime scadenze</span>
+        <h2 class="righe">Cosa si apre e cosa si chiude</h2>
+        <p class="lead">Lo stato si calcola dalla data: una call scaduta è «Chiusa», con l'indicazione della prossima finestra.</p>
+        <a class="link-freccia" href="#fondi">Vai allo scadenzario completo <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+      <div class="scad-finestra">
+        <div class="scadenze">
+          <article class="scad">
+            <span class="stato">Chiusa</span>
+            <h3>Horizon Europe, Cluster 4 Space 2026</h3>
+            <dl><dt>Scadenza</dt><dd class="num">16.09.2026</dd><dt>Prossima</dt><dd>Programma di lavoro 2027</dd></dl>
+          </article>
+          <article class="scad">
+            <span class="stato">Chiusa</span>
+            <h3>EDF 2026, topic Galileo PRS e NAVWAR</h3>
+            <dl><dt>Scadenza</dt><dd class="num">29.09.2026</dd><dt>Prossima</dt><dd>Call 2027</dd></dl>
+          </article>
+          <article class="scad">
+            <span class="stato aperta">Aperta</span>
+            <h3>[Strumento nazionale]</h3>
+            <dl><dt>Scadenza</dt><dd>[GG.MM.AAAA]</dd><dt>Dotazione</dt><dd>[€]</dd></dl>
+          </article>
+          <article class="scad">
+            <span class="stato aperta">In arrivo</span>
+            <h3>[Strumento regionale]</h3>
+            <dl><dt>Apertura</dt><dd>[GG.MM.AAAA]</dd><dt>Dotazione</dt><dd>[€]</dd></dl>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GUIDA E AGGIORNAMENTI + QR ============ -->
+<section class="sez snap guida-sez" id="guida" data-label="Guida">
+  <div class="guida-media" aria-hidden="true">
+    <video class="video-sfondo" src="video/satellite.mp4" poster="img/22_satellite-eo.webp" muted loop playsinline preload="metadata"></video>
+    <div class="griglia-hud"></div>
+    <div class="guida-velo"></div>
+  </div>
+  <div class="wrap">
+    <div class="guida">
+      <div class="guida-testo">
+        <span class="oe-tag-chip oe-tag-chip--lime">Resta aggiornato</span>
+        <h2 class="righe">Scarica la guida e gli aggiornamenti trimestrali</h2>
+        <p class="lead">La guida raccoglie metodo, perimetro e strumenti. Ogni trimestre, la nuova edizione con i dati verificati, le scadenze e gli esiti delle call.</p>
+        <div class="cta-riga">
+          <a class="oe-btn oe-btn--lg oe-btn--accent" href="#guida">Scarica la guida
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg></a>
+          <a class="oe-btn oe-btn--lg oe-btn--secondary btn-sec" href="#guida">Ricevi gli aggiornamenti
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="qr-blocco">
+        <!-- Segnaposto: non è un QR leggibile. Va generato con l'URL definitivo. -->
+        <div class="qr" role="img" aria-label="Segnaposto del codice QR">
+          <i class="mirino m1"></i><i class="mirino m2"></i><i class="mirino m3"></i><i class="mirino m4"></i><i class="scansione"></i>
+          <svg viewBox="0 0 29 29" shape-rendering="crispEdges" aria-hidden="true">
+            <g class="qr-moduli">
+              <path d="M0 0h7v7H0z M1 1v5h5V1z M2 2h3v3H2z" fill-rule="evenodd"/>
+              <path d="M22 0h7v7h-7z M23 1v5h5V1z M24 2h3v3h-3z" fill-rule="evenodd"/>
+              <path d="M0 22h7v7H0z M1 23v5h5v-5z M2 24h3v3H2z" fill-rule="evenodd"/>
+              <path d="M9 1h2v2H9z M13 0h2v3h-2z M17 1h3v2h-3z M9 5h3v2H9z M14 5h2v2h-2z M18 4h2v3h-2z M8 9h2v2H8z M12 9h3v2h-3z M17 9h2v3h-2z M21 9h3v2h-3z M25 9h4v2h-4z M0 9h3v2H0z M4 9h2v3H4z M9 13h2v3H9z M13 12h2v2h-2z M16 14h3v2h-3z M21 13h2v3h-2z M25 13h3v2h-3z M0 13h2v3H0z M4 14h3v2H4z M8 17h3v2H8z M13 16h2v3h-2z M17 18h2v2h-2z M20 17h3v2h-3z M24 17h2v3h-2z M27 16h2v2h-2z M0 17h3v2H0z M4 18h2v3H4z M9 21h2v3H9z M12 20h3v2h-3z M16 22h2v3h-2z M20 21h3v2h-3z M24 22h3v2h-3z M10 25h3v2h-3z M14 26h2v3h-2z M18 25h3v2h-3z M22 25h2v3h-2z M26 26h3v2h-3z"/>
+            </g>
+          </svg>
+        </div>
+        <p class="qr-didascalia mono-12">Inquadra per scaricare la guida</p>
+      </div>
+    </div>
+    <p class="condizioni"><b>Condizioni d'uso:</b> i contenuti possono essere divulgati citando OpenEconomics come fonte.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="piede">
+  <div class="wrap">
+    <div class="loghi">
+      <a href="https://www.openeconomics.eu" target="_blank" rel="noopener"><img src="loghi/logo-black.svg" alt="OpenEconomics" class="logo-oe"></a>
+      <span class="x" aria-hidden="true">×</span>
+      <img src="loghi/inrete-logo.svg" alt="Inrete, Relazioni Istituzionali e Comunicazione" class="logo-inrete">
+    </div>
+    <nav class="link" aria-label="Note legali">
+      <span>Copyright © OpenEconomics Srl 2026</span>
+      <a href="https://www.openeconomics.eu/privacy-policy" target="_blank" rel="noopener">Privacy policy</a>
+      <a href="https://www.openeconomics.eu/cookie-policy" target="_blank" rel="noopener">Cookie policy</a>
+      <a href="https://www.openeconomics.eu" target="_blank" rel="noopener">www.openeconomics.eu</a>
+    </nav>
+  </div>
+</footer>
+
+<div class="barra-presenta" role="status">Modalità Presenta · frecce o clicker per scorrere <button type="button" data-presenta>Esci (Esc)</button></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/3d.js"></script>
+<script src="js/immersivo.js"></script>
+</body>
+</html>

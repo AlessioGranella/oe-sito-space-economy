@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Tema "Spazio" — estensione del design system OpenEconomics
+   Stesso meccanismo di .theme-civiqa: si rimappano i token SEMANTICI,
+   i componenti .oe-* non cambiano. Bozza di proposta, 2026-11-19.
+   Da caricare DOPO colors_and_type.css e components.css.
+   ========================================================================== */
+
+:root, .theme-space {
+  /* Scala "notte": quasi nero con una punta di viola. Il passo 0 è il fondo della
+     bozza Orbita (#05060F); la tinta sale da 234° a 258° e la luminosità da 4% a 10%.
+     Il passo 2 è il fondo di default. Il blu dell'evento (#081550) resta come
+     riferimento per le immagini, non è più un fondo del tema. */
+  --space-0: #05060F;   /* quasi nero, dalla bozza Orbita */
+  --space-1: #070717;
+  --space-2: #0B081B;   /* fondo di default del tema */
+  --space-3: #0F0A21;
+  --space-4: #150D28;   /* punta di viola più marcata */
+  --space-event-blue: #081550;
+
+  /* Rosso Inrete, identico a quello del logo (#E83034). Si usa come FONDO di elementi testuali
+     (chip, retro delle card, riquadri), con testo BIANCO (--space-on-signal). Mai nei grafici,
+     nei dati o come stato. Scelta di brand: il contrasto col bianco è 4,28:1, sotto il 4,5:1
+     di WCAG AA per il testo normale, accettato per mantenere il rosso esatto del logo. */
+  --space-signal:        #E83034;  /* rosso del logo Inrete su schermo */
+  --space-on-signal:     #FFFFFF;
+  --space-inrete-misurato: #E83034; /* stesso valore di --space-signal; nel file .ai è C0 M100 Y85 K0, la conversione sRGB dà #E83034–#EB3640 */
+}
+
+.theme-space {
+  /* Fondi */
+  --oe-bg-dark:   var(--space-2);
+  --oe-bg-accent: var(--space-1);
+  --oe-bg-mid:    var(--space-3);
+
+  /* L'accento luminoso resta il lime OE */
+  --oe-on-dark-accent: var(--oe-lime-400);
+  --oe-on-dark-muted:  var(--oe-bluette-200);
+
+  /* Su fondo spazio l'azione principale è il lime pieno con testo nero */
+  --oe-accent:        var(--oe-lime-400);
+  --oe-accent-strong: var(--oe-lime-500);
+  --oe-accent-on:     var(--oe-black);
+  --oe-accent-soft:   color-mix(in srgb, var(--oe-lime-400) 14%, transparent);
+  --oe-accent-border: color-mix(in srgb, var(--oe-lime-400) 55%, transparent);
+  --oe-pop:           var(--oe-lime-400);
+  --oe-pop-on:        var(--oe-black);
+  --oe-pop-rule:      var(--space-2);
+
+  /* Superfici su fondo scuro */
+  --space-surface:       #120F2C;   /* card e riquadri */
+  --space-surface-high:  #1A1640;   /* hover, riquadri in evidenza */
+  --space-line:          #2B2851;   /* filetti */
+  --space-text:          #FFFFFF;
+  --space-text-muted:    #C9CCEB;   /* testo secondario su notte (contrasto > 10:1) */
+
+  background: var(--oe-bg-dark);
+  color: var(--space-text);
+}
+
+/* Headline in Hedvig (deroga alla regola OE «Hedvig solo per H1»): H1 e H2 del tema.
+   Hedvig ha un solo peso, quindi niente grassetto. Da H3 in giù resta Atkinson. */
+.theme-space h1, .theme-space h2 { font-family: var(--oe-font-serif); font-weight: 400; letter-spacing: -.015em; }
+
+
+/* Chip: in QUESTO sito lo sfondo del chip è il rosso Inrete, non il lime.
+   Deroga alla regola OE «chip sopra H1/H2 = lime». Testo bianco (4,28:1).
+   Il lime resta l'accento di azioni, dati e testi su fondo scuro.
+   La classe .chip-rosso permette di vedere lo stesso effetto fuori dal tema scuro. */
+.theme-space .oe-tag-chip--lime,
+.chip-rosso .oe-tag-chip--lime {
+  background: var(--space-signal);
+  color: var(--space-on-signal);
+}
